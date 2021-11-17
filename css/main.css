@@ -1,12 +1,22 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url("/assets/page-bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-size: 19x;
-    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid transparent;
 }
+.bg {
+    position: fixed;
+    width: 100vw;
+    background-size:cover;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: -99;
+}
+.heading{
+    margin-left: 38vw;
+    font-family:cursive;
+    font-size: 10vh;
+}
+
 .navbar {
     position:fixed;
     margin-top: 3vh;
@@ -37,9 +47,6 @@ body{
 }
 
 
-
-
-
 .profile-image{
     margin-top: 2vh;
     margin-bottom: 8vh;
@@ -50,7 +57,122 @@ body{
 .social{
     margin-top: auto;
     justify-self: flex-end;
+    display: flex;
 }
 .instagram{
-    max-width: 15px;
+    max-width: 20px;
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 73vw;
+    row-gap: 30vh;
+    grid-template-rows: 110vh 100vh 100vh 40vh;
+    justify-content: end;
+    
+}
+
+.content-about-me {
+    font-family: sans-serif;
+    padding: 1em;
+    overflow:auto;
+    background : rgba(255, 255, 255, 0.315);
+
+}
+
+
+.content-language{
+    padding: 1em;
+    margin:1em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background : rgba(255, 255, 255, 0.315);
+
+}
+
+.language-logo {
+    align-self: center;
+    height: 6vh;
+}
+
+.content-intrest { 
+    background:rgba(255, 255, 255, 0.315)
+}
+
+.content-tech-stack {
+    display: grid;
+    padding: 1em ;
+
+
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    align-items: center;
+    grid-template-areas:    "djangologo djangotext djangotext"
+                            "restText   restText   restLogo"
+                            "reactlogo  reactText  reactText"
+                            "postText   postText   postlogo"
+                            "monglogo   mongtext    mongtext"
+                            "linuxtext   linuxtext   linuxlogo";
+
+}
+
+
+
+.django-logo{
+    grid-area : djangologo;
+    justify-self: center;
+}
+.django-text {
+    grid-area: djangotext;
+}
+.rest-logo{
+    grid-area : restLogo;
+    justify-self: center;
+}
+.rest-text {
+    grid-area:  restText;
+}
+.react-logo{
+    grid-area : reactlogo;
+    justify-self: center;
+}
+.react-text {
+    grid-area:  reactText;
+}
+.post-logo{
+    grid-area : postlogo;
+    justify-self: center;
+}
+.post-text {
+    grid-area:  postText;
+}
+.mong-logo{
+    grid-area : monglogo;
+    justify-self: center;
+}
+.mong-text {
+    grid-area:  mongtext;
+}
+.linux-logo{
+    grid-area : linuxlogo;
+    justify-self: center;
+}
+.linux-text {
+    grid-area:  linuxtext;
+}
+
+.element-logo {
+    width: 10vw;
+
+}
+
+@media screen and (min-width : 1280px) {
+    .bg{
+        filter : blur(8px);
+        align-self: center;
+        
+    }    
 }
