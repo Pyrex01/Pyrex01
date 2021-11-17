@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("/assets/page-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 19x;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar {
+    position:fixed;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction:column;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: 20vw;
+    height: 70vh;
+    border-radius: 6px;
+    background-color: rgba(228, 54, 54, 0.787);
+    display:inline-flex;
+    align-items: center;
+}
+
+.nav-element {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-decoration: none;
+    width: 20vw;
+    color:rgb(255, 255, 255);
+}
+
+.nav-element:hover {
+    background-color: rgba(255, 255, 255, 0.883);
+    color: rgba(228, 54, 54, 0.787);
+}
+
+
+
+
+
+.profile-image{
+    margin-top: 2vh;
+    margin-bottom: 8vh;
+    max-width: 15vw;
+    border-radius: 8vw;
+}
+
+.social{
+    margin-top: auto;
+    justify-self: flex-end;
+}
+.instagram{
+    max-width: 15px;
+}
