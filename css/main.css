@@ -187,13 +187,13 @@ body{
 
 @media screen and (min-width:200px) {
     .container{
-        grid-template-rows: 15vh 120vh 400vh 40vh;
+        grid-template-rows: 15vh 140vh 400vh 40vh;
     }
     
 }
 @media screen and (min-width:300px) {
     .container{
-        grid-template-rows: 20vh 120vh 330vh 40vh;
+        grid-template-rows: 20vh 140vh 330vh 40vh;
     }
     
 }
