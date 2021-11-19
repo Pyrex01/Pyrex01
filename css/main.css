@@ -73,9 +73,10 @@ body{
 .container{
     display: grid;
     grid-template-columns: 68vw;
-    row-gap: 30vh;
-    grid-template-rows: 50vh 100vh 100vh 40vh;
+    row-gap: 8vw;
+    grid-template-rows: repeat(4,1fr);
     justify-content: end;
+    font-size: 2em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
@@ -86,6 +87,7 @@ body{
     padding: 1em;
     overflow:visible;
     background : rgba(255, 255, 255, 0.315);
+    margin-bottom: auto;
 
 }
 
@@ -93,11 +95,11 @@ body{
 .content-language{
     border-radius: 6px;
     padding: 1em;
-    font-size: 3.5vw;
     display: flex;
     flex-direction: column;
     align-content: center;
     background : rgba(255, 255, 255, 0.315);
+    margin-bottom: auto;
 
 }
 
@@ -107,10 +109,11 @@ body{
 }
 
 .content-intrest { 
-    margin-top:auto;
+    margin-top: auto;
     padding: 1em;
     border-radius: 6px;
-    background:rgba(255, 255, 255, 0.315)
+    background:rgba(255, 255, 255, 0.315);
+    margin-bottom: 2vh;
 }
 
 .content-tech-stack {
@@ -118,8 +121,6 @@ body{
     border-radius: 6px;
     display: grid;
     padding: 1em ;
-
-    font-size: 2vh;
     grid-template-columns:1fr;
     grid-template-rows: 6vh repeat(6,1fr);
     align-items: center;
@@ -185,7 +186,7 @@ body{
 
 }
 
-@media screen and (min-width:200px) {
+/* @media screen and (min-width:200px) {
     .container{
         grid-template-rows: 15vh 160vh 400vh 40vh;
     }
@@ -195,7 +196,7 @@ body{
     .container{
         grid-template-rows: 20vh 160vh 330vh 40vh;
     }
-    
+     */
 }
 @media screen and (min-width:768px) {
     .content-language {
@@ -234,6 +235,7 @@ body{
     .container {
         grid-template-columns: 83vw;
         grid-template-rows: 50vh 140vh 300vh 40vh;
+        font-size: 1em;
     }
     .content-tech-stack {
         font-size: 2vw;
