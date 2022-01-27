@@ -4,17 +4,26 @@ body{
     font-size: 2vw;
     border: 1px solid transparent;
     font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+
 }
 .bg {
     position: fixed;
     width: 100vw;
     background-size:cover;
     z-index: -99;
+    filter : blur(5px);
+
+    
 }
 .heading{
     margin-left: 38vw;
-    font-family:cursive;
-    font-size: 4vh;
+    font-family:Rage;
+    font-style: italic;
+    font-size: 6vh;
+    color:white;
+    text-shadow:0 0 1.2em #FF0000, 0 0 1.7em #0000FF;
+
 }
 
 .navbar {
@@ -54,7 +63,7 @@ body{
     top: 20px;
     margin-top: 2vh;
     margin-bottom: 8vh;
-    max-width: 15vw;
+    width: 15vw;
     border-radius: 8vw;
 }
 
@@ -130,7 +139,8 @@ body{
                             "reactlogo  reactText  reactText"
                             "postText   postText   postlogo"
                             "monglogo   mongtext   mongtext"
-                            "linuxtext  linuxtext  linuxlogo";
+                            "linuxtext  linuxtext  linuxlogo"
+                            "sklogo     sktext     sktext"    ;
 
 }
 
@@ -180,23 +190,60 @@ body{
 .linux-text {
     grid-area:  linuxtext;
 }
+.sk-logo{
+    grid-area : sklogo;
+    justify-self: center;
+}
+.sk-text {
+    grid-area: sktext;
+}
 
 .element-logo {
     width: 10vw;
 
 }
 
-/* @media screen and (min-width:200px) {
-    .container{
-        grid-template-rows: 15vh 160vh 400vh 40vh;
-    }
-    
+
+
+.content-Projects{
+    background : rgba(255, 255, 255, 0.315);
+    border-radius: 6px;
+    padding:1em;
 }
-@media screen and (min-width:300px) {
-    .container{
-        grid-template-rows: 20vh 160vh 330vh 40vh;
-    }
-     */
+
+.project-card{
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 2px solid black ;
+    border-right: 2px solid black ;
+    border-left: 2px solid black ;
+    padding: 1em;
+    border-radius: 0em 0em 1em 1em ;
+}
+
+.project-card-link{
+    margin-top: 5vh;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    width: 5vw;
+
+}
+
+.project-git-logo{
+    width: 4vw;
+}
+.project-git-logo:hover{
+    background-color: white;
+    border-radius: 2vw;
+    box-shadow :10px 5px 5px black;
+}
+
+.project-des{
+    margin-right: 1vw;
+}
+
+
 
 @media screen and (min-width:768px) {
     .content-language {
@@ -207,13 +254,7 @@ body{
         /* grid-template-rows: 50vh 130vh 300vh 40vh; */
     }
 }
-@media screen and (min-width : 1280px) {
-    .bg{
-        top: -34em;
-        filter : blur(1em);
-        align-self: center;
-        
-    }    
+@media screen and (min-width : 1280px) {    
     .nav-element {
         font-size: 100%;
     }
